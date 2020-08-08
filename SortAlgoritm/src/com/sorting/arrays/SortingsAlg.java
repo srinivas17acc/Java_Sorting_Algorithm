@@ -123,13 +123,11 @@ public class SortingsAlg {
 
 		while (i < j) {
 
-			while (i < j && arr[--j] >= pivot)
-				;
+			while (i < j && arr[--j] >= pivot);
 			if (i < j)
 				arr[i] = arr[j];
 
-			while (i < j && arr[++i] <= pivot)
-				;
+			while (i < j && arr[++i] <= pivot);
 			if (i < j)
 				arr[j] = arr[i];
 
