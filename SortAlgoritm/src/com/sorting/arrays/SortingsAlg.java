@@ -64,11 +64,9 @@ public class SortingsAlg {
 	}
 
 	private void redixSorting(int[] arr, int len, int max) {
-
 		for (int pos = 1; pos / max > 0; pos *= 10) {
 			countSort(arr, len, pos);
 		}
-
 	}
 
 	private void countSort(int[] arr, int len, int pos) {
@@ -91,7 +89,6 @@ public class SortingsAlg {
 	}
 
 	private void countSorting(int[] arr, int len, int k) {
-
 		int[] count = new int[k + 1];
 		int[] temp = new int[arr.length];
 
@@ -111,7 +108,6 @@ public class SortingsAlg {
 	}
 
 	private void quickSorting(int[] arr, int start, int end) {
-
 		if (end - start < 2)
 			return;
 
@@ -121,7 +117,6 @@ public class SortingsAlg {
 	}
 
 	private int partition(int[] arr, int start, int end) {
-
 		int pivot = arr[start];
 		int i = start;
 		int j = end;
@@ -145,7 +140,6 @@ public class SortingsAlg {
 	}
 
 	private void mergeSorting(int[] arr, int start, int end) {
-
 		if (start < end) {
 			int mid = (start + end) / 2;
 			mergeSorting(arr, start, mid);
@@ -155,7 +149,6 @@ public class SortingsAlg {
 	}
 
 	private void merge(int[] arr, int start, int mid, int end) {
-
 		int first = mid - start + 1;
 		int second = end - mid;
 
@@ -187,11 +180,9 @@ public class SortingsAlg {
 		while (second > b) {
 			arr[k++] = right[b++];
 		}
-
 	}
 
 	private void shellSorting(int[] arr) {
-
 		for (int gap = arr.length / 2; gap > 0; gap /= 2) {
 			for (int i = gap; i < arr.length; i++) {
 				int element = arr[i];
@@ -207,7 +198,6 @@ public class SortingsAlg {
 	}
 
 	private void insertionSort(int[] arr) {
-
 		for (int i = 1; i < arr.length; i++) {
 			int element = arr[i];
 			int k;
@@ -231,7 +221,6 @@ public class SortingsAlg {
 	}
 
 	private void bubbleSort(int[] arr) {
-
 		for (int lastIndex = arr.length - 1; lastIndex >= 0; lastIndex--) {
 			for (int firstIndex = 0; firstIndex < lastIndex; firstIndex++) {
 				if (arr[lastIndex] < arr[firstIndex]) {
@@ -247,14 +236,10 @@ public class SortingsAlg {
 	}
 
 	private static void swap(int[] arr, int i, int j) {
-
 		if (i == j)
 			return;
-
 		int temp = arr[i];
 		arr[i] = arr[j];
 		arr[j] = temp;
-
 	}
-
 }
