@@ -8,9 +8,9 @@ public class SortingsAlg {
 	 * 
 	 * Sorting Algorithm
 	 * 
-	 * 1. Bubble 2, Selection 3,Insertion 4, Shell
+	 * 1.Bubble  2.Selection  3.Insertion  4.Shell
 	 * 
-	 * 5, Merge 6, Quick 7,Count 8, Radix
+	 * 5.Merge  6.Quick 7.Count  8.Radix
 	 * 
 	 */
 
